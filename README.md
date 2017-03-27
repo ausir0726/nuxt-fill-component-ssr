@@ -1,4 +1,4 @@
-# async-in-component
+# nuxt-fill-component-ssr
 
 > FINPO project
 
