@@ -16,7 +16,7 @@ const store = new Vuex.Store({
   },
   actions: {
     async nuxtServerInit({ commit }) {
-      const { data } = await axios.get('https://cdn.upage.cool/f/pages/site/55a489ca4cfb0e11005f8f9d?category=55a4a94f4cfb0e11005f8fb1&children=true&limit=5&page=1');
+      const { data } = await axios.get('https://api.myjson.com/bins/owhej');
       commit('replace', data.results.map(t => t.title));
     },
   },
