@@ -7,7 +7,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "bootstrap": "4.0.0-alpha.6",
-    "nuxt": "latest",
+    "nuxt": "0.10.5",
     "snifferjs": "^2.2.0",
     "vue": "^2.2.6",
     "vuex": "^2.2.1"
