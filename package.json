@@ -5,12 +5,13 @@
   "author": "ausir <ausir@finpo.com.tw>",
   "private": true,
   "dependencies": {
-    "axios": "^0.15.3",
-    "bootstrap": "4.0.0-alpha.6",
-    "nuxt": "latest",
+    "axios": "^0.21.3",
+    "bootstrap": "4.0.0",
+    "nuxt": "2.3.0",
     "snifferjs": "^2.2.0",
-    "vue": "^2.2.6",
-    "vuex": "^2.2.1"
+    "vue": "^2.5.17",
+    "vuex": "^2.2.1",
+    "@snyk/protect": "latest"
   },
   "config": {
     "nuxt": {
@@ -25,7 +26,9 @@
     "generate": "nuxt generate",
     "serverbuild": "nuxt build",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -45,5 +48,6 @@
     "sass-loader": "^6.0.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"
-  }
+  },
+  "snyk": true
 }
